@@ -69,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-
+            //Непосредственный вход в программу при условии успеха регистрации
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
 
@@ -106,6 +106,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                             FirebaseUser user = mAuth.getCurrentUser();
 
+                            //Добавление личных данных пользователя
                             emailParentRef = database.child(user.getUid()).child("emailParent");
                             surnameRef = database.child(user.getUid()).child("surname");
                             nameRef = database.child(user.getUid()).child("name");

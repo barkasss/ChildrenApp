@@ -13,73 +13,54 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.brks.childrenapp.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
+public class CardAdapter extends RecyclerView.Adapter<CardAdapter.MyViewHolder> {
 
-    private List<Card> data;
-    Context mContext;
+    ArrayList<Card> list;
+    Context Context;
 
-    public CardAdapter(){}
+    public CardAdapter(Context context, ArrayList<Card> lstCard) {
+        Context = context;
+        list = lstCard;
+    }
 
     @NonNull
     @Override
-    public CardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new CardViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view,parent,false));
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(Context).inflate(R.layout.card_view, parent, false);
 
+        return new MyViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
-         Card card = data.get(position);
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        Card card = list.get(position);
+        holder.cardName.setText(card.getCardName());
+        holder.description.setText(card.getDescription());
+        holder.cost.setText(card.getCost());
 
-         holder.cardName.setText(card.cardName);
-         holder.cardDescription.setText(card.description);
-         holder.cardLink.setText(card.link);
-         holder.cardCost.setText(card.cost);
     }
-
-    public CardAdapter(List<Card> data) {
-        this.data = data;
-    }
-
-    public CardAdapter(Context context, List<Card> lstCard) {
-        mContext = context;
-        data = lstCard;
-    }
-
-
-
-
 
     @Override
     public int getItemCount() {
-        return data.size();
+        return list.size();
     }
 
-    class CardViewHolder extends RecyclerView.ViewHolder {
-        private TextView cardName;
-        private TextView cardDescription;
-        private TextView cardLink;
-        private TextView cardCost;
+    public static class MyViewHolder extends  RecyclerView.ViewHolder{
 
-        public CardViewHolder(@NonNull View itemView){
+        TextView cardName, description, cost;
+        Button LinkBtn;
+
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            cardName = (TextView) itemView.findViewById(R.id.cardName);
-            cardDescription = (TextView) itemView.findViewById(R.id.cardDescription);
-            cardLink = (Button) itemView.findViewById(R.id.btnLink);
-            cardCost = (TextView) itemView.findViewById(R.id.cardCost);
 
+            cardName = itemView.findViewById(R.id.cardName);
+            description = itemView.findViewById(R.id.cardDescription);
+            LinkBtn = itemView.findViewById(R.id.btnLink);
+            cost = itemView.findViewById(R.id.cardCost);
         }
-
-    }
-
-    public List<Card> getData() {
-        return data;
-    }
-
-    public void setData(List<Card> data) {
-        this.data = data;
     }
 
 }

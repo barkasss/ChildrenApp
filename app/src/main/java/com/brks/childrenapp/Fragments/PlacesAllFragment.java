@@ -32,8 +32,8 @@ import java.util.List;
 
 public class PlacesAllFragment extends Fragment {
 
-    private RecyclerView recyclerViewAll;
-    private List<Card> lstCard = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private ArrayList<Card> lstCard = new ArrayList<>();
     private CardAdapter recyclerAdapter;
 
     private DatabaseReference database;
@@ -58,39 +58,39 @@ public class PlacesAllFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_places_all, container, false);
+        lstCard.clear();
 
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance("https://childrenapp-4aba1-default-rtdb.europe-west1.firebasedatabase.app").getReference().child("cards");
         FirebaseUser user = mAuth.getCurrentUser();
 
-        recyclerViewAll = v.findViewById(R.id.listAll);
-        recyclerViewAll.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerViewAll.setItemAnimator(new DefaultItemAnimator());
-        recyclerAdapter = new CardAdapter(getContext(), lstCard);
-        recyclerViewAll.setAdapter(recyclerAdapter);
+        recyclerView = v.findViewById(R.id.listAll);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerAdapter = new CardAdapter(getContext(),lstCard);
+        recyclerView.setAdapter(recyclerAdapter);
 
-        FireBaseInit();
-    return v;
-    }
-
-    public void FireBaseInit(){
-        ValueEventListener valueEventListener = new ValueEventListener() {
+        database.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-            //    if (lstCard.size()>0)lstCard.clear();
-             //   for(DataSnapshot ds : snapshot.getChildren()){
-             //       Card card = ds.getValue(Card.class);
-             //       lstCard.add(card);
+                for (DataSnapshot ds : snapshot.getChildren()){
+                    Card card = ds.getValue(Card.class);
+                    lstCard.add(card);
+
                 }
-            //    recyclerAdapter.notifyDataSetChanged();
-         //   }
+                recyclerAdapter.notifyDataSetChanged();
+            }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        };
-        database.addValueEventListener(valueEventListener);
+        });
+    return v;
     }
+
+
+
+
 
 }

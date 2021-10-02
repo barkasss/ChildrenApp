@@ -57,7 +57,7 @@ public class AutActivity extends AppCompatActivity implements View.OnClickListen
 
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-
+            //Непосредственный взход в программу при условии успеха авторизации
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
 
