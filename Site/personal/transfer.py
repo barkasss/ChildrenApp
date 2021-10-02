@@ -1,1 +1,6 @@
-def enter(username, password):
+user = 'lol'
+pas = 'kek'
+
+
+
+
