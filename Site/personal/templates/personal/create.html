@@ -1,0 +1,26 @@
+{% extends 'personal/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Создать запись
+{% endblock %}
+
+{% block head %}
+<li class="nav-item"><a href="/profile" class="nav-link" >Кружки</a></li>
+<li class="nav-item"><a href="/create" class="nav-link active" aria-current="page">Добавить кружок</a></li>
+{% endblock %}
+
+{% block content %}
+    <h1>Создать кружок</h1>
+    <form method="post">
+        {% csrf_token %}
+        <h3>{{ form.title }}</h3>
+        <h3>{{ form.tag }}</h3>
+        <h3>{{ form.location }}</h3>
+        <h3>{{ form.price }}</h3>
+        <h3>{{ form.task }}</h3>
+
+        <button type="submit" class="btn btm-success text-white" style="background-color: #0d6efd">Добавить</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}
