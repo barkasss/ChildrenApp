@@ -11,11 +11,14 @@
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/drawable/shapesignup.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/activity_aut.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/activity_poll.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/card_view.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/fragment_places.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/fragment_places_all.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/fragment_poll.xml" value="0.1" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/fragment_profile_fragmnet.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/layout/item_answer_layout.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChildrenApp/app/src/main/res/menu/bottom_navigation_main.xml" value="0.1" />
       </map>
     </option>

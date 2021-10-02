@@ -13,4 +13,90 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="quiz">Опрос</string>
+    <string name="quizText">Данный опрос поможет тебе определиться и лучше разобраться с твоими интересами! Тут нет правильных или неправильных ответов. Отвечай так, как считаешь нужным.</string>
+    <string name="question1">Тебе интереснее работать в команде или ты расчитываешь только на себя? </string>
+    <string name="question2">В городе построим новый спортивный центр и... </string>
+    <string name="question3">Чем бы ты занялся на каникулах? </string>
+    <string name="question4">Какой подарок попросил бы ты на День Рождения? </string>
+    <string name="question5">Какие предметы в школе тебе нравятся больше всего? </string>
+    <string name="question6">К тебе приходят гости с ночевкой. Чем будете заниматься? </string>
+    <string name="question7">В школе проходит фестиваль мастерклассов. На какой бы ты сходил? </string>
+    <string name="question8">Супер сила: </string>
+    <string name="question9">Вы едете с семьей на курорт: </string>
+    <string name="question10">Какую бы ты выбрал школьную экскурсию? </string>
+
+    <string name="answer_1.1">Да, работать в команде весело! </string>
+    <string name="answer_1.2">Полагаюсь на себя всегда </string>
+    <string name="answer_1.3">Не могу точно сказать </string>
+
+    <string name="answer_2.1">Надеюсь там будет бассейн, обожаю плавать </string>
+    <string name="answer_2.2">Супер, наконец будет площадка для футболка </string>
+    <string name="answer_2.3">Лучше бы скейт парк построили! </string>
+    <string name="answer_2.4">Лишь бы бытовые дорожки построили </string>
+    <string name="answer_2.5">Вот бы еще ледяную арену построили для катания на коньках </string>
+    <string name="answer_2.6">Жду с нетерпением новый спорт зал! </string>
+
+    <string name="answer_3.1">Отправлюсь в путешствие </string>
+    <string name="answer_3.2">Наконец в театр схожу </string>
+    <string name="answer_3.3">У нас тут выставку открыли </string>
+    <string name="answer_3.4">Схожу в зоопарк </string>
+    <string name="answer_3.5">Поеду в лагерь </string>
+    <string name="answer_3.6">Схожу на концерт любимой группы </string>
+    <string name="answer_3.7">Лучше дома посижу и книжку почитаю </string>
+
+    <string name="answer_4.1">Конструктор лего </string>
+    <string name="answer_4.2">Спортвные костюм </string>
+    <string name="answer_4.3">Новые кроссовки </string>
+    <string name="answer_4.4">Ролики или коньки </string>
+    <string name="answer_4.5">Диск с музыкой </string>
+    <string name="answer_4.6">Профессиональные карандаши </string>
+    <string name="answer_4.7">Съезжу в поездку </string>
+    <string name="answer_4.8">Настольную игру </string>
+
+    <string name="answer_5.1">Физика </string>
+    <string name="answer_5.2">Математика </string>
+    <string name="answer_5.3">Биология </string>
+    <string name="answer_5.4">Иностранные языки </string>
+    <string name="answer_5.5">Физкультура </string>
+    <string name="answer_5.6">Литература </string>
+    <string name="answer_5.7">История </string>
+    <string name="answer_5.8">Музыека </string>
+
+    <string name="answer_6.1">Сыграем в шахматы </string>
+    <string name="answer_6.2">Запустим караоке </string>
+    <string name="answer_6.3">Устроим показ мод </string>
+    <string name="answer_6.4">Сыграем в "Крокодила" </string>
+    <string name="answer_6.5">Дискотека! </string>
+
+    <string name="answer_7.1">Выжигание по дереву </string>
+    <string name="answer_7.2">Гончарный мастеркласс </string>
+    <string name="answer_7.3">Кружок по дебатам </string>
+    <string name="answer_7.4">Придумать свой бренд одежды </string>
+    <string name="answer_7.5">Открытки </string>
+    <string name="answer_7.6">Танцы из фортнайт </string>
+
+    <string name="answer_8.1">Иметь чарующий голос </string>
+    <string name="answer_8.2">Быть самым быстрым </string>
+    <string name="answer_8.3">Уметь общаться с животными </string>
+    <string name="answer_8.4">Повелевать роботами </string>
+    <string name="answer_8.5">Разговаривать на всех языках </string>
+    <string name="answer_8.6">Побеждать в любой драке </string>
+    <string name="answer_8.7">Уметь угововрить любого человека </string>
+
+    <string name="answer_9.1">Лыжный курорт </string>
+    <string name="answer_9.2">На море купаться </string>
+    <string name="answer_9.3">Оперный театр </string>
+    <string name="answer_9.4">Показ моды в Париже </string>
+    <string name="answer_9.5">Тур по  </string>
+
+    <string name="answer_10.1">Конюшня </string>
+    <string name="answer_10.2">Школа боевых искусств </string>
+    <string name="answer_10.3">Балет </string>
+    <string name="answer_10.4">Музей машиностроения </string>
+    <string name="answer_10.5">Спортивное ориентирование </string>
+
+    <string name="next">Далее</string>
+    <string name="back">Назад</string>
+
 </resources>

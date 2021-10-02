@@ -73,6 +73,7 @@ public class PlacesAllFragment extends Fragment {
         database.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                lstCard.clear();
                 for (DataSnapshot ds : snapshot.getChildren()){
                     Card card = ds.getValue(Card.class);
                     lstCard.add(card);
